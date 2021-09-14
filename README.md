@@ -33,7 +33,7 @@ yarn
 yarn start
 ```
 
-//Start Docker
+Start Docker
 ```
 yarn mfdashboard
 ```
