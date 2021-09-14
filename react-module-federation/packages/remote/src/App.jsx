@@ -4,6 +4,8 @@ import React from 'react'
 function App() {
   return (
     <div>
+      <h2>Remote</h2>
+      <hr/>
       <Button>Remote Button</Button>
     </div>
   )

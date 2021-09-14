@@ -6,6 +6,7 @@ const App = () => (
   <div>
     <h1>Typescript</h1>
     <h2>Remote</h2>
+    <hr/>
     <Button>Remote button</Button>
   </div>
 );
