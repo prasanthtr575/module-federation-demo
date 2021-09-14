@@ -1,0 +1,20 @@
+{
+  "name": "ecomm-demo",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "applications/*",
+    "services/*"
+  ],
+  "scripts": {
+    "wipe": "rm -rf node_modules packages/**/**/node_modules",
+    "clear:build": "rm -rf packages/**/**/dist",
+    "build": "yarn workspaces run build",
+    "start": "concurrently \"wsrun --parallel start\"",
+    "mfdashboard": "docker run -p 5000:3000 --mount type=bind,source=\"$(pwd)\"/dashboard-data,target=/data -t scriptedalchemy/mf-dashboard:latest"
+  },
+  "dependencies": {
+    "concurrently": "^5.2.0",
+    "wsrun": "^5.2.1"
+  }
+}

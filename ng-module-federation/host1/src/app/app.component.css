@@ -1,0 +1,14 @@
+div {
+  background-color: aquamarine;
+}
+ul, div {
+  display: flex;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  padding: 10px;
+}

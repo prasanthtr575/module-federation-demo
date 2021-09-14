@@ -1,0 +1,19 @@
+{
+  "name": "ts-react-module-federation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Prasanth Raghavan",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "wipe": "rm -rf node_modules packages/**/node_modules",
+    "start": "concurrently \"wsrun --parallel start\""
+  },
+  "dependencies": {
+    "concurrently": "^5.2.0",
+    "wsrun": "^5.2.1"
+  }
+}
