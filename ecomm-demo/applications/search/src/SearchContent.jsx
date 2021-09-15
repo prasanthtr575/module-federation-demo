@@ -15,7 +15,6 @@ const SearchContent = () => {
       <Row style={{ paddingTop: "1em" }}>
         <FormControl
           type="text"
-          placeholder="Search"
           value={search}
           onChange={(evt) => searchSet(evt.target.value)}
         />
@@ -30,7 +29,7 @@ const SearchContent = () => {
       >
         {data &&
           data.map((pokemon) => (
-            <Card style={{ width: "18rem" }} key={pokemon.name.english}>
+            <Card style={{ width: "20rem" }} key={pokemon.name.english}>
               <Card.Img
                 variant="top"
                 src={getImage(pokemon)}

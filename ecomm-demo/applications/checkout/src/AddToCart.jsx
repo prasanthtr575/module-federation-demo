@@ -26,6 +26,3 @@ export default connect(
     addToCart: (pokemon) => dispatch(postAddToCart(pokemon)),
   })
 )(AddToCart);
-
-
-//variant="warning"

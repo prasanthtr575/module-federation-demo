@@ -2,7 +2,6 @@ import { Container, Nav, Navbar } from "react-bootstrap";
 import { Link, Route, BrowserRouter as Router, Switch } from "react-router-dom";
 
 import { Cart } from "react-bootstrap-icons";
-import {Helmet} from "react-helmet";
 import React from "react";
 import { connect } from "react-redux";
 
@@ -29,10 +28,6 @@ const CheckoutRoute = () => (
 const Frame = ({ items = [], page = "home" }) => (
   <Router>
     <Container>
-      {/* <Helmet>
-        <title>{ page.toLowerCase().replace(/\b[a-z]/g, function(letter) {
-    return letter.toUpperCase(); } ) }</title>
-      </Helmet> */}
       <Navbar bg="dark" expand="lg">
         <Navbar.Brand>
           <Link to="/" style={{ color: "white" }}>
@@ -87,3 +82,6 @@ const Frame = ({ items = [], page = "home" }) => (
 );
 
 export default connect((state) => state)(Frame);
+
+
+
