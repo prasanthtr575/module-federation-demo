@@ -5,7 +5,6 @@ import { connect } from "react-redux";
 
 const AddToCart = ({ pokemon, addToCart }) => (
   <Button
-    className
     onClick={() => addToCart(pokemon)}
     style={{ width: "100%" }}
   >
@@ -27,3 +26,6 @@ export default connect(
     addToCart: (pokemon) => dispatch(postAddToCart(pokemon)),
   })
 )(AddToCart);
+
+
+//variant="warning"
