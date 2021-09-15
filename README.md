@@ -37,3 +37,5 @@ Start Docker
 ```console
 yarn mfdashboard
 ```
+
+![Architecture](./ecomm-demo/Arch.png "Text to show on mouseover")
